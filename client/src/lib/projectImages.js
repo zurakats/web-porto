@@ -1,21 +1,18 @@
-// Automatic project image discovery using Vite's import.meta.glob
-const coverModules = import.meta.glob(
-  '../assets/projects/*/cover.{png,jpg,jpeg,webp,avif,svg}',
-  {
-    eager: true,
-    query: '?url',
-    import: 'default',
-  }
-);
+// Pengaturan Path Gambar Proyek Manual (Explicit Mapping)
+// Anda bisa langsung mengganti path import di bawah ini jika ingin mengganti gambar proyek:
 
-// Map slug -> cover URL
-export const projectCovers = Object.fromEntries(
-  Object.entries(coverModules).map(([filePath, imageUrl]) => {
-    const parts = filePath.replace(/\\/g, '/').split('/');
-    const slug = parts[parts.length - 2];
-    return [slug, imageUrl];
-  })
-);
+import myaNavigatorCover from '../assets/projects/mya-navigator/transkarta.png';
+import scanTranslatorCover from '../assets/projects/scan-translator/comic-translator.png';
+import predictiveLeadScoringCover from '../assets/projects/predictive-lead-scoring/banking-sales.png';
+import gradehubCover from '../assets/projects/gradehub/gradehub.jpeg';
+
+export const projectCovers = {
+  // slug proyek : file gambar hasil import
+  'mya-navigator': myaNavigatorCover,
+  'scan-translator': scanTranslatorCover,
+  'predictive-lead-scoring': predictiveLeadScoringCover,
+  'gradehub': gradehubCover,
+};
 
 export function getProjectCover(slug) {
   return projectCovers[slug] || null;

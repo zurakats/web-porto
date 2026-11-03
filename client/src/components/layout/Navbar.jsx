@@ -4,11 +4,10 @@ import { Button } from '../common/Button';
 
 const NAV_ITEMS = [
   { label: 'About', href: '#about' },
-  { label: 'Focus Areas', href: '#focus-areas' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Education', href: '#education' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Certifications', href: '#certifications' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -16,6 +15,8 @@ export function Navbar({ profile }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const cvPath = profile?.cvPath || '/documents/CV-Edra-Fahar-Athaya-IT-Support.pdf';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,35 +47,35 @@ export function Navbar({ profile }) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#0B1020]/90 backdrop-blur-md border-b border-[#273449] shadow-lg shadow-black/20'
+          ? 'bg-[#070B16]/90 backdrop-blur-xl border-b border-slate-800/80 shadow-2xl shadow-black/40'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-18">
           {/* Brand Logo / Initials */}
           <a
             href="#"
-            className="flex items-center gap-2.5 text-slate-100 hover:text-cyan-400 font-mono font-bold tracking-tight text-base transition-colors"
+            className="flex items-center gap-2.5 text-white hover:text-cyan-300 font-mono font-extrabold tracking-tight text-base transition-colors"
           >
-            <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-cyan-400">
+            <div className="w-8 h-8 rounded-xl bg-cyan-950/70 border border-cyan-500/40 flex items-center justify-center text-cyan-400 shadow-[0_0_12px_rgba(6,182,212,0.2)]">
               <Terminal className="w-4 h-4" />
             </div>
             <span>edra<span className="text-cyan-400">.dev</span></span>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-1 lg:gap-2">
+          <nav className="hidden md:flex items-center gap-1 lg:gap-1.5 bg-[#0E1628]/70 border border-slate-800/80 px-2 py-1.5 rounded-2xl backdrop-blur-md">
             {NAV_ITEMS.map((item) => {
               const isActive = activeSection === item.href.slice(1);
               return (
                 <a
                   key={item.href}
                   href={item.href}
-                  className={`px-3 py-1.5 text-xs lg:text-sm font-medium rounded-md transition-colors ${
+                  className={`px-3 py-1 text-xs lg:text-sm font-semibold rounded-xl transition-all ${
                     isActive
-                      ? 'text-cyan-400 bg-blue-500/10 border border-blue-500/20'
-                      : 'text-slate-300 hover:text-slate-100 hover:bg-slate-800/60'
+                      ? 'text-cyan-300 bg-cyan-950/80 border border-cyan-500/30 shadow-[0_0_12px_rgba(6,182,212,0.15)]'
+                      : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
                   }`}
                 >
                   {item.label}
@@ -89,7 +90,10 @@ export function Navbar({ profile }) {
               variant="outline"
               size="sm"
               icon={FileDown}
-              href="#cv-downloads"
+              href={cvPath}
+              download="CV-Edra-Fahar-Athaya-IT-Support.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Get CV
             </Button>
@@ -122,17 +126,18 @@ export function Navbar({ profile }) {
               {item.label}
             </a>
           ))}
-          <div className="pt-3 border-t border-slate-800 flex flex-col gap-2">
-            <Button
-              variant="primary"
-              size="sm"
-              icon={FileDown}
-              href="#cv-downloads"
+          <div className="pt-3 border-t border-slate-800">
+            <a
+              href={cvPath}
+              download="CV-Edra-Fahar-Athaya-IT-Support.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
-              className="w-full"
+              className="flex items-center justify-center gap-2 px-3 py-2.5 text-xs font-semibold bg-[#141F36] border border-cyan-500/30 text-cyan-300 hover:text-white hover:border-cyan-400 rounded-xl transition-colors"
             >
-              Download CV Options
-            </Button>
+              <FileDown className="w-4 h-4 text-cyan-400" />
+              <span>Download CV</span>
+            </a>
           </div>
         </div>
       )}

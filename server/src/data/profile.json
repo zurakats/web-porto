@@ -4,14 +4,12 @@
   "bio": "Informatics graduate from Universitas Gunadarma with practical experience in full-stack web application development (JavaScript, React, Node.js, Express, PostgreSQL) and technical support operations carried out during the FAT Inspector internship at Tim FAT LAPI ITB.",
   "location": "Indonesia",
   "email": "edrafaharz236@gmail.com",
+  "phone": "+62 896-3759-9540",
+  "phoneRaw": "089637599540",
   "github": "https://github.com/zurakats",
   "linkedin": "https://www.linkedin.com/in/edra-fahar-athaya-6635492b0",
+  "cvPath": "/documents/CV-Edra-Fahar-Athaya-IT-Support.pdf",
   "cvFiles": [
-    {
-      "name": "Software Development CV",
-      "path": "/documents/CV-Edra-Fahar-Athaya-Software-Development.pdf",
-      "category": "Software Development"
-    },
     {
       "name": "IT Support CV",
       "path": "/documents/CV-Edra-Fahar-Athaya-IT-Support.pdf",

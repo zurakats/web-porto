@@ -1,75 +1,57 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SectionHeading } from '../common/SectionHeading';
-import { GraduationCap, Award, Briefcase, Code, CheckCircle } from 'lucide-react';
 
-export function AboutSection({ profile }) {
-  const milestones = [
-    {
-      year: '2022 – 2026',
-      title: 'Bachelor of Informatics',
-      institution: 'Universitas Gunadarma',
-      icon: GraduationCap,
-      description: 'Completed Bachelor’s degree in Informatics with a 3.7 GPA, focusing on full-stack web engineering, database architecture, and transit routing algorithms.',
-    },
-    {
-      year: 'Aug 2025 – Jan 2026',
-      title: 'Asah Program Participant',
-      institution: 'Dicoding Indonesia',
-      icon: Award,
-      description: 'Intensive software development training in React and backend engineering; completed capstone project as part of the REBE development team.',
-    },
-    {
-      year: 'Jan 2026 – Mar 2026',
-      title: 'FAT Inspector Intern & IT Support',
-      institution: 'Tim FAT LAPI ITB',
-      icon: Briefcase,
-      description: 'Conducted Factory Acceptance Test inspections for tank trucks, provided hardware/software troubleshooting for field and office staff, and supported digital inspection workflow transition.',
-    },
-  ];
-
+export function AboutSection() {
   return (
-    <section id="about" className="py-20 border-t border-[#273449] bg-[#0B1020]/50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 border-t border-slate-800/80 bg-[#0A0F1D] relative overflow-hidden">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeading
+          tag="01"
           eyebrow="Background"
-          title="About Edra"
-          description="A factual overview of academic training, project experience, and technical support background."
+          title="About Me"
+          description="A recent Informatics graduate from Gunadarma University with an interest in software development, particularly web development. Experienced in developing web applications using JavaScript and libraries such as React.js and Express.js through the Dicoding-led Asah Program in 2025. Currently interested in pursuing a career in IT Support, particularly in assisting users, troubleshooting technical issues, and ensuring systems function properly. Additionally, gained internship experience in fuel tanker truck inspection while also providing technical support to Pertamina's FAT team."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          {milestones.map((item, index) => {
-            const Icon = item.icon;
-            return (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="bg-[#111827] border border-[#273449] rounded-xl p-6 flex flex-col justify-between hover:border-blue-500/40 transition-colors"
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-cyan-400">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <span className="text-xs font-mono font-semibold text-slate-400 px-2.5 py-1 rounded bg-[#172033] border border-[#273449]">
-                      {item.year}
-                    </span>
-                  </div>
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 pt-2"
+        >
+          {/* Education */}
+          <div className="space-y-2">
+            <span className="text-xs font-mono font-semibold uppercase tracking-widest text-cyan-400">
+              Education
+            </span>
+            <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+              S1 Informatika — GPA 3.7
+            </h3>
+            <p className="text-base text-slate-300 font-medium">
+              Universitas Gunadarma
+            </p>
+            <p className="text-sm font-mono text-slate-400">
+              2022 — 2026
+            </p>
+          </div>
 
-                  <h3 className="text-lg font-bold text-slate-100">{item.title}</h3>
-                  <p className="text-xs font-medium text-cyan-400 mt-0.5">{item.institution}</p>
-
-                  <p className="mt-3 text-xs sm:text-sm text-slate-400 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
+          {/* Experience */}
+          <div className="space-y-2">
+            <span className="text-xs font-mono font-semibold uppercase tracking-widest text-blue-400">
+              Internship
+            </span>
+            <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+              FAT Inspector Intern
+            </h3>
+            <p className="text-base text-slate-300 font-medium">
+              Tim FAT LAPI ITB
+            </p>
+            <p className="text-sm font-mono text-slate-400">
+              Jan 2026 — Mar 2026
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,42 +1,56 @@
 {
   "certifications": [
     {
-      "id": "dicoding-backend",
-      "title": "Belajar Fundamental Back-End dengan JavaScript",
+      "id": "dicoding-sql",
+      "title": "Belajar Dasar Structured Query Language (SQL)",
       "issuer": "Dicoding Indonesia",
-      "issueDate": "December 2025",
-      "expiryDate": "December 2028",
-      "type": "Certification",
-      "skills": ["JavaScript", "Node.js", "RESTful API", "Hapi / Express"]
-    },
-    {
-      "id": "dicoding-cloud-ai",
-      "title": "Belajar Dasar Cloud dan Gen AI di AWS",
-      "issuer": "Dicoding Indonesia",
-      "issueDate": "December 2025",
-      "expiryDate": "December 2028",
-      "type": "Certification",
-      "skills": ["AWS Cloud", "Generative AI", "Cloud Computing Fundamentals"]
+      "year": "2024",
+      "issueDate": "22 Februari 2024",
+      "expiryDate": "22 Februari 2027",
+      "credentialId": "JLX1K460JP72",
+      "url": "https://www.dicoding.com/certificates/JLX1K460JP72"
     },
     {
       "id": "dicoding-react",
       "title": "Belajar Membuat Aplikasi Web dengan React",
       "issuer": "Dicoding Indonesia",
-      "issueDate": "September 2025",
-      "expiryDate": "September 2028",
-      "type": "Certification",
-      "skills": ["React.js", "Component Lifecycle", "State Management", "SPA"]
+      "year": "2025",
+      "issueDate": "24 September 2025",
+      "expiryDate": "24 September 2028",
+      "credentialId": "72ZDK7Q6LPYW",
+      "url": "https://www.dicoding.com/certificates/72ZDK7Q6LPYW"
+    },
+    {
+      "id": "dicoding-backend",
+      "title": "Belajar Fundamental Back-End dengan JavaScript",
+      "issuer": "Dicoding Indonesia",
+      "year": "2025",
+      "issueDate": "30 Desember 2025",
+      "expiryDate": "30 Desember 2028",
+      "credentialId": "JLX15QVG5Z72",
+      "url": "https://www.dicoding.com/certificates/JLX15QVG5Z72"
+    },
+    {
+      "id": "dicoding-cloud-ai",
+      "title": "Belajar Dasar Cloud dan Gen AI di AWS",
+      "issuer": "Dicoding Indonesia",
+      "year": "2025",
+      "issueDate": "24 Desember 2025",
+      "expiryDate": "24 Desember 2028",
+      "credentialId": "MRZM672KKPYQ",
+      "url": "https://www.dicoding.com/certificates/MRZM672KKPYQ"
     }
   ],
   "training": [
     {
       "id": "asah-dicoding",
-      "title": "Teknologi Informasi dan Komunikasi",
-      "issuer": "Asah led by Dicoding",
-      "period": "August 2025 – January 2026",
-      "type": "Vocational Training & Capstone Program",
-      "description": "Comprehensive program covering frontend development, backend engineering, cloud integration, and cross-functional team capstone delivery (Predictive Lead Scoring Portal).",
-      "skills": ["React", "Express", "REST APIs", "Team Collaboration", "Agile"]
+      "title": "Pelatihan React & Back-End with AI",
+      "program": "Program Asah led by Dicoding in association with Accenture",
+      "issuer": "Dicoding & Accenture",
+      "certificateNumber": "ASAH/GRAD/XXVI-01/R891D5Y0518",
+      "year": "2026",
+      "issueDate": "14 Januari 2026",
+      "filePath": "/documents/Sertifikat-Pelatihan-Asah-Dicoding-Accenture.pdf"
     }
   ]
 }

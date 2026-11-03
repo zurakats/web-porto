@@ -1,19 +1,19 @@
 import React from 'react';
-import { ArrowUp, Mail } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from '../common/BrandIcons';
+import { ArrowUp } from 'lucide-react';
+
+const CURRENT_YEAR = new Date().getFullYear();
 
 export function Footer({ profile }) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="border-t border-[#273449] bg-[#080D1A] py-12 text-slate-400">
+    <footer className="border-t border-slate-800/80 bg-[#080D1A] py-10 text-slate-400">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+          {/* Identity */}
+          <div>
             <p className="text-sm font-semibold text-slate-200">
               {profile?.name || 'Edra Fahar Athaya'}
             </p>
@@ -22,45 +22,17 @@ export function Footer({ profile }) {
             </p>
           </div>
 
-          {/* Social Links */}
-          <div className="flex items-center gap-4">
-            {profile?.github && (
-              <a
-                href={profile.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub Profile"
-                className="w-9 h-9 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-colors"
-              >
-                <GithubIcon className="w-4 h-4" />
-              </a>
-            )}
-            {profile?.linkedin && (
-              <a
-                href={profile.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn Profile"
-                className="w-9 h-9 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-colors"
-              >
-                <LinkedinIcon className="w-4 h-4" />
-              </a>
-            )}
-            {profile?.email && (
-              <a
-                href={`mailto:${profile.email}`}
-                aria-label="Send Email"
-                className="w-9 h-9 rounded-lg bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-              </a>
-            )}
+          {/* Built With Note */}
+          <div>
+            <p className="text-xs font-mono text-slate-400">
+              Built with <span className="text-cyan-400 font-semibold">React</span>, <span className="text-cyan-400 font-semibold">Express</span> &amp; <span className="text-cyan-400 font-semibold">Tailwind CSS</span>
+            </p>
           </div>
 
-          {/* Back to top button */}
+          {/* Copyright & Back to Top */}
           <div className="flex items-center gap-3">
             <span className="text-xs text-slate-400">
-              &copy; {currentYear} All rights reserved.
+              &copy; {CURRENT_YEAR} All rights reserved.
             </span>
             <button
               type="button"
