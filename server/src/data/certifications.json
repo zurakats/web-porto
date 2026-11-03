@@ -1,0 +1,42 @@
+{
+  "certifications": [
+    {
+      "id": "dicoding-backend",
+      "title": "Belajar Fundamental Back-End dengan JavaScript",
+      "issuer": "Dicoding Indonesia",
+      "issueDate": "December 2025",
+      "expiryDate": "December 2028",
+      "type": "Certification",
+      "skills": ["JavaScript", "Node.js", "RESTful API", "Hapi / Express"]
+    },
+    {
+      "id": "dicoding-cloud-ai",
+      "title": "Belajar Dasar Cloud dan Gen AI di AWS",
+      "issuer": "Dicoding Indonesia",
+      "issueDate": "December 2025",
+      "expiryDate": "December 2028",
+      "type": "Certification",
+      "skills": ["AWS Cloud", "Generative AI", "Cloud Computing Fundamentals"]
+    },
+    {
+      "id": "dicoding-react",
+      "title": "Belajar Membuat Aplikasi Web dengan React",
+      "issuer": "Dicoding Indonesia",
+      "issueDate": "September 2025",
+      "expiryDate": "September 2028",
+      "type": "Certification",
+      "skills": ["React.js", "Component Lifecycle", "State Management", "SPA"]
+    }
+  ],
+  "training": [
+    {
+      "id": "asah-dicoding",
+      "title": "Teknologi Informasi dan Komunikasi",
+      "issuer": "Asah led by Dicoding",
+      "period": "August 2025 – January 2026",
+      "type": "Vocational Training & Capstone Program",
+      "description": "Comprehensive program covering frontend development, backend engineering, cloud integration, and cross-functional team capstone delivery (Predictive Lead Scoring Portal).",
+      "skills": ["React", "Express", "REST APIs", "Team Collaboration", "Agile"]
+    }
+  ]
+}

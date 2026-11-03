@@ -1,0 +1,125 @@
+[
+  {
+    "slug": "mya-navigator",
+    "title": "Mya Navigator — Transjakarta/JakLingko Transit App",
+    "category": "Software Development",
+    "context": "Undergraduate Thesis Project (Universitas Gunadarma)",
+    "shortDescription": "A Jakarta public-transit route planner using GTFS data and a frequency-based RAPTOR routing approach, with walking-route estimation and map visualization.",
+    "detailedDescription": "Undergraduate thesis project focused on urban public transportation in Jakarta. Implemented a transit routing engine based on the Round-Based Public Transit Routing (RAPTOR) algorithm using General Transit Feed Specification (GTFS) data from Transjakarta and JakLingko. Provides multi-modal transfer planning (up to 3 transfers), pedestrian walking estimation, and interactive Leaflet map visualization.",
+    "role": "Thesis Research & Implementation. Designed and developed the GTFS ingestion pipeline, frequency-based RAPTOR routing algorithm, transfer logic, and Leaflet interactive map interface.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "Leaflet",
+      "GTFS",
+      "RAPTOR Algorithm",
+      "PostgreSQL"
+    ],
+    "repository": {
+      "owner": "zurakats",
+      "name": "mya-navigator-ultra-navigator-2",
+      "url": "https://github.com/zurakats/mya-navigator-ultra-navigator-2",
+      "isAccessible": true
+    },
+    "featured": true,
+    "highlights": [
+      "Frequency-based RAPTOR routing engine for transit networks",
+      "GTFS data parsing and schedule calculation for Transjakarta/JakLingko",
+      "Multi-transfer pathing with realistic walking connection estimates",
+      "Interactive map rendering with stop markers and route polylines"
+    ]
+  },
+  {
+    "slug": "scan-translator",
+    "title": "Scan Translator",
+    "category": "Software Development",
+    "context": "Personal Project",
+    "shortDescription": "A comic and manga page translator that detects speech bubbles with a custom YOLOv5 model, extracts text with Manga-OCR or EasyOCR, and integrates Gemini AI and Google Translate.",
+    "detailedDescription": "An automated image-processing and machine translation pipeline for visual storytelling media. Uses computer vision (YOLOv5) to localize speech bubbles, optical character recognition (Manga-OCR / EasyOCR) for Japanese and multi-language script extraction, and LLM/API integration (Google Gemini & Google Translate) to produce translated overlays.",
+    "role": "Independent Developer. Built the Python computer vision pipeline, trained and integrated bubble detection models, connected OCR engines, and implemented automated translation handlers.",
+    "technologies": [
+      "Python",
+      "YOLOv5",
+      "Manga-OCR",
+      "EasyOCR",
+      "Google Gemini API",
+      "Google Translate",
+      "OpenCV"
+    ],
+    "repository": {
+      "owner": "zurakats",
+      "name": "scan-translator-2",
+      "url": "https://github.com/zurakats/scan-translator-2",
+      "isAccessible": true
+    },
+    "featured": true,
+    "highlights": [
+      "Object detection model trained to segment speech bubbles",
+      "Specialized OCR support for horizontal and vertical Japanese text",
+      "Context-aware translation powered by Google Gemini API and Google Translate",
+      "Clean visual text replacement and translated overlay generation"
+    ]
+  },
+  {
+    "slug": "predictive-lead-scoring",
+    "title": "Predictive Lead Scoring Portal for Banking Sales",
+    "category": "Software Development",
+    "context": "Dicoding Asah Capstone Project",
+    "shortDescription": "A collaborative banking-sales portal that combines an application dashboard and an ML scoring service to prioritize customer leads.",
+    "detailedDescription": "Developed as a capstone project for the Asah led by Dicoding program. A collaborative banking solution created by a 5-person team (2 Machine Learning specialists, 3 React/Backend engineers). The platform ingests customer demographic and financial profiles, queries an ML model scoring service, and renders prioritized leads with actionable insights.",
+    "role": "React & Backend (REBE) Team Member. Collaborated in a 5-person multidisciplinary team (2 ML, 3 REBE). Developed backend REST API endpoints, coordinated data exchange with the ML scoring microservice, and integrated the React sales dashboard.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "REST API",
+      "Tailwind CSS",
+      "Machine Learning Integration"
+    ],
+    "repository": {
+      "owner": "RioSudrajat",
+      "name": "Predictive-Lead-Scoring-For-Banking-Sales",
+      "url": "https://github.com/RioSudrajat/Predictive-Lead-Scoring-For-Banking-Sales",
+      "isAccessible": false,
+      "notice": "Original team repository is currently private / archived by team owner. Project contribution verified via Dicoding Asah Capstone records."
+    },
+    "featured": true,
+    "highlights": [
+      "Collaborative project in a 5-member agile team (2 ML, 3 REBE)",
+      "RESTful API design for lead ingestion and ranking retrieval",
+      "Responsive React dashboard providing lead priority visualization",
+      "Seamless client-side consumption of predictive ML model outputs"
+    ]
+  },
+  {
+    "slug": "gradehub",
+    "title": "GradeHub — School Grade Management System",
+    "category": "Software Development",
+    "context": "Academic Coursework Project",
+    "shortDescription": "A multi-role academic management application for administrators, teachers, and students, built using MVC architecture.",
+    "detailedDescription": "A full-featured academic records management platform structured on Model-View-Controller (MVC) architectural principles. Accommodates multiple user personas with distinct permissions: administrators oversee school master data, teachers input scores and attendance, and students monitor academic progress and grade reports.",
+    "role": "Full-Stack Developer. Designed the relational database schema, implemented MVC controller logic and routing with Express, and built role-based access control (RBAC).",
+    "technologies": [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Supabase",
+      "JavaScript",
+      "MVC Architecture"
+    ],
+    "repository": {
+      "owner": "zurakats",
+      "name": "GradeHub",
+      "url": "https://github.com/zurakats/GradeHub",
+      "isAccessible": true
+    },
+    "featured": true,
+    "highlights": [
+      "MVC pattern implementation for clear separation of concerns",
+      "Multi-role access control for admins, teachers, and students",
+      "Relational data modeling for student scores, courses, and attendance",
+      "Structured grade calculation and report generation"
+    ]
+  }
+]

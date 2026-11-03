@@ -1,0 +1,16 @@
+[
+  {
+    "id": "universitas-gunadarma",
+    "institution": "Universitas Gunadarma",
+    "degree": "Bachelor's Degree in Informatics",
+    "period": "2022 – 2026",
+    "gpa": "3.7",
+    "location": "Depok, Indonesia",
+    "description": "Comprehensive study of computer science fundamentals, software engineering, algorithms, database systems, and modern web application development.",
+    "highlights": [
+      "Grade Point Average (GPA): 3.7",
+      "Completed undergraduate thesis: 'Implementasi Algoritma RAPTOR Menggunakan Data GTFS Untuk Perencanaan Rute Angkutan Umum Jakarta'",
+      "Active coursework in Database Systems, Web Programming, Software Architecture, and Artificial Intelligence"
+    ]
+  }
+]

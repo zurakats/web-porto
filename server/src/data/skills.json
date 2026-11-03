@@ -1,0 +1,35 @@
+{
+  "categories": [
+    {
+      "name": "Programming Languages",
+      "skills": ["JavaScript", "Python", "SQL"]
+    },
+    {
+      "name": "Frontend Development",
+      "skills": ["React.js", "Tailwind CSS", "Bootstrap", "HTML5", "CSS3"]
+    },
+    {
+      "name": "Backend Development",
+      "skills": ["Node.js", "Express.js", "Flask", "RESTful APIs"]
+    },
+    {
+      "name": "Databases",
+      "skills": ["PostgreSQL", "Supabase", "MongoDB"]
+    },
+    {
+      "name": "Tools & Platforms",
+      "skills": ["GitHub", "Postman", "Figma", "Canva", "VS Code"]
+    },
+    {
+      "name": "IT Support & Office",
+      "skills": [
+        "Hardware Troubleshooting",
+        "Wi-Fi Diagnostics",
+        "Printer Support",
+        "Microsoft Excel",
+        "Microsoft Word",
+        "Microsoft PowerPoint"
+      ]
+    }
+  ]
+}

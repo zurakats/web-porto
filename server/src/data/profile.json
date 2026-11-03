@@ -1,0 +1,47 @@
+{
+  "name": "Edra Fahar Athaya",
+  "headline": "Informatics Graduate | Software Development & IT Support",
+  "bio": "Informatics graduate from Universitas Gunadarma with practical experience in full-stack web application development (JavaScript, React, Node.js, Express, PostgreSQL) and technical support operations carried out during the FAT Inspector internship at Tim FAT LAPI ITB.",
+  "location": "Indonesia",
+  "email": "edrafaharz236@gmail.com",
+  "github": "https://github.com/zurakats",
+  "linkedin": "https://www.linkedin.com/in/edra-fahar-athaya-6635492b0",
+  "cvFiles": [
+    {
+      "name": "Software Development CV",
+      "path": "/documents/CV-Edra-Fahar-Athaya-Software-Development.pdf",
+      "category": "Software Development"
+    },
+    {
+      "name": "IT Support CV",
+      "path": "/documents/CV-Edra-Fahar-Athaya-IT-Support.pdf",
+      "category": "IT Support"
+    }
+  ],
+  "focusAreas": [
+    {
+      "id": "software-dev",
+      "title": "Software Development",
+      "badge": "Engineering",
+      "description": "Practical experience developing modular web applications, REST APIs, and responsive interfaces.",
+      "points": [
+        "Web application development using modern JavaScript (ES6+) and React",
+        "REST API development and backend routing with Node.js and Express.js",
+        "Relational and cloud database integration using PostgreSQL and Supabase",
+        "Project implementations: Mya Navigator, Scan Translator, GradeHub, and Predictive Lead Scoring"
+      ]
+    },
+    {
+      "id": "it-support",
+      "title": "IT Support",
+      "badge": "Technical Operations",
+      "description": "Hardware, software, and connectivity troubleshooting performed during the FAT Inspector internship.",
+      "points": [
+        "Laptop and tablet hardware & operating system troubleshooting",
+        "Printer setup, configuration, and troubleshooting for field & office staff",
+        "Local Wi-Fi connectivity diagnostics and resolution",
+        "Technical user support during transition from paper checklists to digital inspection software"
+      ]
+    }
+  ]
+}

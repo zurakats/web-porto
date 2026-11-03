@@ -1,0 +1,18 @@
+[
+  {
+    "id": "fat-lapi-itb",
+    "role": "FAT Inspector Intern",
+    "company": "Tim FAT LAPI ITB",
+    "location": "Kabupaten Sidoarjo, Indonesia",
+    "period": "January 2026 – March 2026",
+    "type": "Internship",
+    "description": "Participated in Factory Acceptance Test inspections for fuel and LPG tank truck fabrication, alongside providing on-site technical support to field and office staff.",
+    "responsibilities": [
+      "Performed Factory Acceptance Test inspections during the production of fuel and LPG tank trucks.",
+      "Provided technical assistance to inspectors in the field and office, including troubleshooting laptops, tablets, printers, and Wi-Fi connectivity.",
+      "Assisted the team during the transition from paper checklists to a digital inspection application and reported issues encountered during its use.",
+      "Prepared daily reports and production recapitulations."
+    ],
+    "skills": ["Hardware Troubleshooting", "Network Diagnostics", "Digital Workflow Migration", "Inspection Recapitulation", "IT Support"]
+  }
+]
