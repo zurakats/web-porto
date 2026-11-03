@@ -1,31 +1,22 @@
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import { createRequire } from 'module';
 import { githubService } from './github.service.js';
-import { logger } from '../utils/logger.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const DATA_DIR = path.join(__dirname, '..', 'data');
+const require = createRequire(import.meta.url);
+
+const profileData = require('../data/profile.json');
+const projectsData = require('../data/projects.json');
+const experienceData = require('../data/experience.json');
+const educationData = require('../data/education.json');
+const skillsData = require('../data/skills.json');
+const certificationsData = require('../data/certifications.json');
 
 class PortfolioService {
-  async readJson(filename) {
-    try {
-      const filePath = path.join(DATA_DIR, filename);
-      const raw = await fs.readFile(filePath, 'utf-8');
-      return JSON.parse(raw);
-    } catch (err) {
-      logger.error(`Error reading ${filename}: ${err.message}`);
-      throw err;
-    }
-  }
-
   async getProfile() {
-    return this.readJson('profile.json');
+    return JSON.parse(JSON.stringify(profileData));
   }
 
   async getRawProjects() {
-    return this.readJson('projects.json');
+    return JSON.parse(JSON.stringify(projectsData));
   }
 
   async getProjects(enrichWithGitHub = true) {
@@ -37,19 +28,19 @@ class PortfolioService {
   }
 
   async getExperience() {
-    return this.readJson('experience.json');
+    return JSON.parse(JSON.stringify(experienceData));
   }
 
   async getEducation() {
-    return this.readJson('education.json');
+    return JSON.parse(JSON.stringify(educationData));
   }
 
   async getSkills() {
-    return this.readJson('skills.json');
+    return JSON.parse(JSON.stringify(skillsData));
   }
 
   async getCertifications() {
-    return this.readJson('certifications.json');
+    return JSON.parse(JSON.stringify(certificationsData));
   }
 
   async getFullPortfolio() {
@@ -69,10 +60,6 @@ class PortfolioService {
       education,
       skills,
       certifications,
-      meta: {
-        timestamp: new Date().toISOString(),
-        version: '1.0.0',
-      },
     };
   }
 }

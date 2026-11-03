@@ -31,3 +31,6 @@ desktop.ini
 .env.*
 !.env.example
 
+# Vercel
+.vercel
+
