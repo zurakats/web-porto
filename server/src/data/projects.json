@@ -1,10 +1,10 @@
 [
   {
     "slug": "mya-navigator",
-    "title": "Mya Navigator — Transjakarta/JakLingko Transit App",
+    "title": "Transkarta",
     "category": "Software Development",
     "context": "Undergraduate Thesis Project (Universitas Gunadarma)",
-    "shortDescription": "A Jakarta public-transit route planner using GTFS data and a frequency-based RAPTOR routing approach, with walking-route estimation and map visualization.",
+    "shortDescription": "A Jakarta public-transit route app using GTFS data and a frequency-based RAPTOR routing approach, with walking-route estimation and map visualization.",
     "detailedDescription": "Undergraduate thesis project focused on urban public transportation in Jakarta. Implemented a transit routing engine based on the Round-Based Public Transit Routing (RAPTOR) algorithm using General Transit Feed Specification (GTFS) data from Transjakarta and JakLingko. Provides multi-modal transfer planning (up to 3 transfers), pedestrian walking estimation, and interactive Leaflet map visualization.",
     "role": "Thesis Research & Implementation. Designed and developed the GTFS ingestion pipeline, frequency-based RAPTOR routing algorithm, transfer logic, and Leaflet interactive map interface.",
     "technologies": [
@@ -32,7 +32,7 @@
   },
   {
     "slug": "scan-translator",
-    "title": "Scan Translator",
+    "title": "Comic Translator",
     "category": "Software Development",
     "context": "Personal Project",
     "shortDescription": "A comic and manga page translator that detects speech bubbles with a custom YOLOv5 model, extracts text with Manga-OCR or EasyOCR, and integrates Gemini AI and Google Translate.",
@@ -93,10 +93,10 @@
   },
   {
     "slug": "gradehub",
-    "title": "GradeHub — School Grade Management System",
+    "title": "GradeHub",
     "category": "Software Development",
     "context": "Academic Coursework Project",
-    "shortDescription": "A multi-role academic management application for administrators, teachers, and students, built using MVC architecture.",
+    "shortDescription": "School grade management application for administrators, teachers, and students, built using MVC architecture.",
     "detailedDescription": "A full-featured academic records management platform structured on Model-View-Controller (MVC) architectural principles. Accommodates multiple user personas with distinct permissions: administrators oversee school master data, teachers input scores and attendance, and students monitor academic progress and grade reports.",
     "role": "Full-Stack Developer. Designed the relational database schema, implemented MVC controller logic and routing with Express, and built role-based access control (RBAC).",
     "technologies": [
